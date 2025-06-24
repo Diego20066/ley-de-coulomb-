@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ley de Coulomb - Triángulo F13 y F23</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./index.js"></script>
+</head>
+<body>
+  <h2>Ley de Coulomb</h2>
+  <p>Este programa calcula la fuerza eléctrica entre tres cargas puntuales usando la Ley de Coulomb (F13 y F23).</p>
+
+  <label>Carga 1:</label>
+  <input type="number" id="q1">
+  <select id="unidad-q1">
+    <option value="1e-3">mili</option>
+    <option value="1e-6">micro</option>
+    <option value="1e-9">nano</option>
+  </select><br>
+
+  <label>Carga 2:</label>
+  <input type="number" id="q2">
+  <select id="unidad-q2">
+    <option value="1e-3">mili</option>
+    <option value="1e-6">micro</option>
+    <option value="1e-9">nano</option>
+  </select><br>
+
+  <label>Carga 3:</label>
+  <input type="number" id="q3">
+  <select id="unidad-q3">
+    <option value="1e-3">mili</option>
+    <option value="1e-6">micro</option>
+    <option value="1e-9">nano</option>
+  </select><br>
+
+  <label for="r">Distancia entre cargas (m):</label><br>
+  <input type="number" id="r" placeholder="Ingrese la distancia"><br><br>
+
+  <button onclick="calcularCargas()">Calcular Cargas</button>
+
+  <div id="resultado"></div>
+  <canvas id="grafico" width="500" height="500" style="border:1px solid #ccc; margin-top: 20px;"></canvas>
+</body>
+</html>
+
